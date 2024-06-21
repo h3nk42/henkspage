@@ -20,7 +20,7 @@ const HamburgerMenu: FC<{ isVisible: boolean }> = (props) => {
   const { isVisible } = props;
   return (
     <div
-      className={`fixed right-0 mt-28 z-50 bg-header-500 transition-all duration-500 bg-opacity-25 backdrop-blur-lg rounded-l-lg lg:hidden  ${
+      className={`fixed right-0 mt-28 z-50 bg-background-500 transition-all duration-500 bg-opacity-25 header-blur rounded-l-lg lg:hidden  ${
         isVisible ? "translate-x-0 scale-x-100" : "translate-x-full scale-x-0"
       } w-32 py-4 transform transition-transform duration-300 ease-in-out`}
     >
@@ -61,9 +61,9 @@ export const Header: FC = (props) => {
     <div>
       <HamburgerMenu isVisible={hamburgerMenuVisible} />
       <div
-        className={`fixed top-0 left-0 w-full h-24 backdrop-filter z-40 flex justify-between lg:grid lg:grid-cols-3 items-center  ${
+        className={`fixed top-0 left-0 w-full h-24  z-40 flex justify-between lg:grid lg:grid-cols-3 items-center  ${
           isScrolled
-            ? "bg-header-500 transition-all duration-500 bg-opacity-25 backdrop-blur-lg"
+            ? "bg-background-500 transition-all duration-500 bg-opacity-25 header-blur"
             : "bg-transparent transition-all duration-500  bg-opacity-0"
         } px-2 sm:px-4 md:px-8 xl:px-52 `}
       >

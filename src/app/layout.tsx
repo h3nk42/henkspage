@@ -37,7 +37,7 @@ export default function RootLayout({
       </head>
       <body className={noto_sans.variable} style={{ scrollBehavior: "smooth" }}>
         {
-          <main className="flex min-h-screen flex-col items-center font-noto">
+          <main className="flex min-h-screen flex-col items-center font-noto text-white">
             <div className=" fixed inset-0 bg-background-500 -z-50"></div>
             <Header />
             {children}
